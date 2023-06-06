@@ -14,9 +14,10 @@ spec:
     spec:
       containers:
       - name: backstage
-        image: daed.duckdns.org:50000/backstage:latest
+        image: daed.duckdns.org:50000/backstage:14
         ports:
         - containerPort: 7007
+        imagePullPolicy: Always
 ---
 apiVersion: v1
 kind: Service
@@ -26,7 +27,7 @@ metadata:
   name: backstage
 spec:
     ports:
-    - nodePort: 37007
+    - nodePort: 32007
       port: 7007
       protocol: TCP
       targetPort: 7007

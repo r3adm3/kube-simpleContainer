@@ -22,7 +22,7 @@ spec:
             value: "https://192.168.1.171:50000/v2"
           - name: REGISTRY_TRUST_ANY_SSL
             value: "true"
-          - name: REGISTY_NAME
+          - name: REGISTRY_NAME
             value: "daed.duckdns.org:50000"
 ---
 apiVersion: v1
